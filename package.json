@@ -1,0 +1,11 @@
+{
+  "name": "blue-belt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:bitcoder247/blue-belt.git",
+  "author": "omi <bitcoder247@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
