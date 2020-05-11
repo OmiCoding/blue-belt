@@ -16,7 +16,7 @@ services:
       - "80:80"
     volumes:
       - ./web:/var/www/html
-      - ./nginx/nginx.conf:/etc/nginx/conf.d
+      - ./nginx:/etc/nginx/conf.d
       - ./cert/etc:/etc/letsencrypt
       - ./cert/var:/var/lib/letsencrypt
     depends_on:
