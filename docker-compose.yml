@@ -5,8 +5,6 @@ services:
     build:
       context: .
     container_name: nodejs-container
-    ports:
-      - "8080:3000"
     networks:
       - app-network
     restart: unless-stopped
@@ -18,14 +16,13 @@ services:
       - "80:80"
     volumes:
       - ./web:/var/www/html
-      - ./nginx/nginx-conf:/etc/nginx/conf.d
+      - ./nginx/nginx.conf:/etc/nginx/conf.d
       - ./cert/etc:/etc/letsencrypt
       - ./cert/var:/var/lib/letsencrypt
     depends_on:
       - nodejs
     networks:
       - app-network
-
   certbot:
     image: certbot/certbot
     container_name: certbot-container
@@ -35,7 +32,7 @@ services:
       - ./web:/var/www/html
     depends_on:
       - webserver
-    command: certonly --webroot -webroot-path=/var/www/html --email bitcoder247@protonmail.com --agree-tos --no-eff-email --staging -d blubelt.com -d www.blubelt.com
+    command: certonly --webroot --webroot-path=/var/www/html --email bitcoder247@protonmail.com --agree-tos --no-eff-email --staging -d blubelt.com -d www.blubelt.com
 
 networks:
   app-network:
