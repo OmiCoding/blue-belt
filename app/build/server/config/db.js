@@ -25,7 +25,7 @@ if (process.env.DBPATH === "docker") {
     autoIndex: false,
     useUnifiedTopology: true
   };
-  exports.MONGODB_URI = MONGODB_URI = "mongodb://db:27017";
+  exports.MONGODB_URI = MONGODB_URI = "mongodb://db:27017/blubelt";
 } else {
   const {
     MONGODB_ADMINUSER = "useromi",

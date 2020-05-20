@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build:docker": "DBPATH=docker npx babel ./server -d ./build/server",
-    "build:local": "DBPATH=local npx babel ./server -d ./build/server",
+    "build": "npx babel ./server -d ./build/server",
     "dev:client": "cd ./build/client && yarn start",
     "dev:server": "cd ./build/server && nodemon index.js",
+    "docker:server": "cd ./build/server && DBPATH=docker nodemon index.js",
     "dev": "concurrently \"dev:client\" \"dev:server\""
   },
   "dependencies": {

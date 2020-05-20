@@ -16,7 +16,7 @@ COPY ./app .
 
 RUN yarn install
 
-CMD ["yarn", "server"]
+CMD ["yarn", "docker:server"]
 
 # build-essential
 # python
