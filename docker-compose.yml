@@ -5,8 +5,11 @@ services:
     build:
       context: .
     container_name: nodejs-container
+    depends_on:
+      - db
     networks:
       - app-network
+      - backend
     restart: unless-stopped
 
   webserver:
@@ -39,6 +42,26 @@ services:
 
     command: certonly --webroot --webroot-path=/var/www/html --email bitcoder247@protonmail.com --agree-tos --no-eff-email --force-renewal -d blubelt.com -d www.blubelt.com
 
+  db:
+    image: mongo:4.2.6-bionic
+    restart: unless-stopped
+    container_name: mongo-container
+    expose:
+      - "27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
+      - MONGO_INITDB_DATABASE=${MONGO_DATABASE}
+    volumes:
+      - ./.docker/mongodb/data:/data/db
+      - ./.docker/mongodb/config/dbcustom:/etc/mongo
+      - ./.docker/mongodb/scripts/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./.docker/mongodb/log:/var/log/mongodb
+    networks:
+      - backend
+
 networks:
   app-network:
+    driver: bridge
+  backend:
     driver: bridge

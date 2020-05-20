@@ -1,57 +1,23 @@
 #Nodejs Image Setup
 
-FROM node:12-alpine3.11
+FROM node:12.16-stretch-slim
 
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+RUN apt-get update && apt-get upgrade
+
+RUN apt-get install -y build-essential && apt-get -y install python && apt-get install -y bash
+
+RUN mkdir -p /home/node/app/node_modules
+
+RUN chown -R node:node /home/node/app
 
 WORKDIR /home/node/app
 
-COPY package*.json ./
-
-USER node
+COPY ./app .
 
 RUN yarn install
 
-COPY ./app .
+CMD ["yarn", "server"]
 
-EXPOSE 8080
+# build-essential
+# python
 
-CMD ["node", "server.js"]
-
-
-
-
-#Creating Alpine environment for Nginx
-# FROM alpine:3.11.6
-
-# RUN addgroup -S appgroup
-
-# RUN adduser -S omi -G appgroup 
-
-# RUN apk update && apk add bash
-
-# RUN apk add nginx
-
-# RUN mkdir -p /run/nginx
-
-# RUN ["bash"]
-
-#Injecting hardening configuration
-# COPY ./config/sysctl.conf /etc/sysctl.conf
-
-
-#Web server build stage
-# FROM nginx:stable
-
-#alpine has commands different from debian/ubuntu
-# RUN addgroup -S appgroup && adduser -S omi -G appgroup
-
-# RUN
-
-
-
-
-# Messing with bash within the nginx container
-# FROM nginx:stable
-
-# CMD ["bash"]

@@ -1,3 +1,13 @@
-build/
 node_modules/
 .git/
+.env
+
+
+
+app/node_modules/
+app/client/
+app/server/
+app/yarn.lock
+app/.babelrc.json
+app/.eslintrc.js
+app/.prettierrc.js

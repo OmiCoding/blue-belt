@@ -1,3 +1,16 @@
+# Root level ignores
 node_modules/
 cert/
 dhparam/
+app/
+data/
+.env
+.docker/
+
+# App level ignores
+app/client
+app/server
+app/.babelrc.json
+app/.eslintrc.js
+app/.prettierrc.js
+app/node_modules
