@@ -4,12 +4,18 @@ cert/
 dhparam/
 data/
 .env
-.docker/
+
 
 # App level ignores
 app/client
 app/server
-app/.babelrc.json
+app/shared
+app/utils
+app/babel.config.json
+app/package.json
+app/webpack.config.js
 app/.eslintrc.js
 app/.prettierrc.js
 app/node_modules
+app/yarn.lock
+app/yarn-error.log

@@ -1,0 +1,2 @@
+exports.ids=[4],exports.modules={61:function(e,t,a){"use strict";t.a=a.p+"922083be36fba8444fe2d48b6d73167e.jpg"},71:function(e,t,a){"use strict";a.r(t);var n=a(0),c=a.n(n),l=a(51),r=a(61);t.default=()=>c.a.createElement(l.a,null,c.a.createElement(l.c,null,c.a.createElement(l.b,{src:r.a})),c.a.createElement("div",{className:"account-drop-down"},"My Account",c.a.createElement("span",null)))}};
+//# sourceMappingURL=4.server.js.map

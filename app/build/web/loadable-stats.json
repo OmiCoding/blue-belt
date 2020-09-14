@@ -1,0 +1,1849 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.43.0",
+  "hash": "bea5870ee0fe71dc5f94",
+  "publicPath": "/web/",
+  "outputPath": "/home/omi/CodingProjects/blubelt/app/build/web",
+  "assetsByChunkName": {
+    "npm.core-js": [
+      "0.client.js",
+      "0.client.js.map"
+    ],
+    "npm.emotion": [
+      "1.client.js",
+      "1.client.js.map"
+    ],
+    "client-components-dashboard-company-CompanyDashboard~client-components-dashboard-worker-WorkerDashbo~e348d1ba": [
+      "2.client.js",
+      "2.client.js.map"
+    ],
+    "npm.dom-helpers": [
+      "3.client.js",
+      "3.client.js.map"
+    ],
+    "npm.react-transition-group": [
+      "4.client.js",
+      "4.client.js.map"
+    ],
+    "npm.lodash": [
+      "5.client.js",
+      "5.client.js.map"
+    ],
+    "npm.react-dom": [
+      "6.client.js",
+      "6.client.js.map"
+    ],
+    "npm.webpack": [
+      "7.client.js",
+      "7.client.js.map"
+    ],
+    "AccButton": [
+      "8.client.js",
+      "8.client.js.map"
+    ],
+    "JobPostingsForm": [
+      "9.client.js",
+      "9.client.js.map"
+    ],
+    "client-components-dashboard-JobPost": [
+      "10.client.js",
+      "10.client.js.map"
+    ],
+    "client-components-dashboard-company-CompanyDashboard": [
+      "11.client.js",
+      "11.client.js.map"
+    ],
+    "client-components-dashboard-postings-JobPostings": [
+      "12.client.js",
+      "12.client.js.map"
+    ],
+    "client-components-dashboard-search-JobSearch": [
+      "13.client.js",
+      "13.client.js.map"
+    ],
+    "client-components-dashboard-worker-WorkerDashboard": [
+      "14.client.js",
+      "14.client.js.map"
+    ],
+    "components-Home": [
+      "15.client.js",
+      "15.client.js.map"
+    ],
+    "components-Welcome": [
+      "16.client.js",
+      "16.client.js.map"
+    ],
+    "components-login-Login": [
+      "17.client.js",
+      "17.client.js.map"
+    ],
+    "components-register-Register": [
+      "18.client.js",
+      "18.client.js.map"
+    ],
+    "main": [
+      "client.js",
+      "client.js.map"
+    ],
+    "npm.axios": [
+      "20.client.js",
+      "20.client.js.map"
+    ],
+    "npm.create-react-class": [
+      "21.client.js",
+      "21.client.js.map"
+    ],
+    "npm.decode-uri-component": [
+      "22.client.js",
+      "22.client.js.map"
+    ],
+    "npm.history": [
+      "23.client.js",
+      "23.client.js.map"
+    ],
+    "npm.hoist-non-react-statics": [
+      "24.client.js",
+      "24.client.js.map"
+    ],
+    "npm.loadable": [
+      "25.client.js",
+      "25.client.js.map"
+    ],
+    "npm.mini-create-react-context": [
+      "26.client.js",
+      "26.client.js.map"
+    ],
+    "npm.object-assign": [
+      "27.client.js",
+      "27.client.js.map"
+    ],
+    "npm.process": [
+      "28.client.js",
+      "28.client.js.map"
+    ],
+    "npm.prop-types": [
+      "29.client.js",
+      "29.client.js.map"
+    ],
+    "npm.query-string": [
+      "30.client.js",
+      "30.client.js.map"
+    ],
+    "npm.react": [
+      "31.client.js",
+      "31.client.js.map"
+    ],
+    "npm.react-fast-compare": [
+      "32.client.js",
+      "32.client.js.map"
+    ],
+    "npm.react-helmet": [
+      "33.client.js",
+      "33.client.js.map"
+    ],
+    "npm.react-is": [
+      "34.client.js",
+      "34.client.js.map"
+    ],
+    "npm.react-quill": [
+      "35.client.js",
+      "35.client.js.map"
+    ],
+    "npm.react-router": [
+      "36.client.js",
+      "36.client.js.map"
+    ],
+    "npm.react-router-dom": [
+      "37.client.js",
+      "37.client.js.map"
+    ],
+    "npm.react-side-effect": [
+      "38.client.js",
+      "38.client.js.map"
+    ],
+    "npm.regenerator-runtime": [
+      "39.client.js",
+      "39.client.js.map"
+    ],
+    "npm.resolve-pathname": [
+      "40.client.js",
+      "40.client.js.map"
+    ],
+    "npm.scheduler": [
+      "41.client.js",
+      "41.client.js.map"
+    ],
+    "npm.tiny-invariant": [
+      "42.client.js",
+      "42.client.js.map"
+    ],
+    "npm.value-equal": [
+      "43.client.js",
+      "43.client.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "0.client.js",
+      "size": 47632,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "npm.core-js"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "0.client.js.map",
+      "size": 105,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "npm.core-js"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "1.client.js",
+      "size": 23861,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "npm.emotion"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "1.client.js.map",
+      "size": 105,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "npm.emotion"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "10.client.js",
+      "size": 28383,
+      "chunks": [
+        10,
+        2
+      ],
+      "chunkNames": [
+        "client-components-dashboard-JobPost"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "10.client.js.map",
+      "size": 107,
+      "chunks": [
+        10,
+        2
+      ],
+      "chunkNames": [
+        "client-components-dashboard-JobPost"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "11.client.js",
+      "size": 52515,
+      "chunks": [
+        11
+      ],
+      "chunkNames": [
+        "client-components-dashboard-company-CompanyDashboard"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "11.client.js.map",
+      "size": 107,
+      "chunks": [
+        11
+      ],
+      "chunkNames": [
+        "client-components-dashboard-company-CompanyDashboard"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "12.client.js",
+      "size": 36008,
+      "chunks": [
+        12,
+        2,
+        22,
+        30
+      ],
+      "chunkNames": [
+        "client-components-dashboard-postings-JobPostings"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "12.client.js.map",
+      "size": 107,
+      "chunks": [
+        12,
+        2,
+        22,
+        30
+      ],
+      "chunkNames": [
+        "client-components-dashboard-postings-JobPostings"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "13.client.js",
+      "size": 37961,
+      "chunks": [
+        13,
+        2,
+        22,
+        30
+      ],
+      "chunkNames": [
+        "client-components-dashboard-search-JobSearch"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "13.client.js.map",
+      "size": 107,
+      "chunks": [
+        13,
+        2,
+        22,
+        30
+      ],
+      "chunkNames": [
+        "client-components-dashboard-search-JobSearch"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "14.client.js",
+      "size": 52617,
+      "chunks": [
+        14
+      ],
+      "chunkNames": [
+        "client-components-dashboard-worker-WorkerDashboard"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "14.client.js.map",
+      "size": 107,
+      "chunks": [
+        14
+      ],
+      "chunkNames": [
+        "client-components-dashboard-worker-WorkerDashboard"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "15.client.js",
+      "size": 11666,
+      "chunks": [
+        15,
+        2
+      ],
+      "chunkNames": [
+        "components-Home"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "15.client.js.map",
+      "size": 107,
+      "chunks": [
+        15,
+        2
+      ],
+      "chunkNames": [
+        "components-Home"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "16.client.js",
+      "size": 3115,
+      "chunks": [
+        16
+      ],
+      "chunkNames": [
+        "components-Welcome"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "16.client.js.map",
+      "size": 107,
+      "chunks": [
+        16
+      ],
+      "chunkNames": [
+        "components-Welcome"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "17.client.js",
+      "size": 17902,
+      "chunks": [
+        17
+      ],
+      "chunkNames": [
+        "components-login-Login"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "17.client.js.map",
+      "size": 107,
+      "chunks": [
+        17
+      ],
+      "chunkNames": [
+        "components-login-Login"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "18.client.js",
+      "size": 110006,
+      "chunks": [
+        18,
+        2
+      ],
+      "chunkNames": [
+        "components-register-Register"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "18.client.js.map",
+      "size": 107,
+      "chunks": [
+        18,
+        2
+      ],
+      "chunkNames": [
+        "components-register-Register"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "2.client.js",
+      "size": 2697,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "client-components-dashboard-company-CompanyDashboard~client-components-dashboard-worker-WorkerDashbo~e348d1ba"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "2.client.js.map",
+      "size": 105,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "client-components-dashboard-company-CompanyDashboard~client-components-dashboard-worker-WorkerDashbo~e348d1ba"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "20.client.js",
+      "size": 13544,
+      "chunks": [
+        20
+      ],
+      "chunkNames": [
+        "npm.axios"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "20.client.js.map",
+      "size": 107,
+      "chunks": [
+        20
+      ],
+      "chunkNames": [
+        "npm.axios"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "21.client.js",
+      "size": 5341,
+      "chunks": [
+        21
+      ],
+      "chunkNames": [
+        "npm.create-react-class"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "21.client.js.map",
+      "size": 107,
+      "chunks": [
+        21
+      ],
+      "chunkNames": [
+        "npm.create-react-class"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "22.client.js",
+      "size": 1050,
+      "chunks": [
+        22
+      ],
+      "chunkNames": [
+        "npm.decode-uri-component"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "22.client.js.map",
+      "size": 107,
+      "chunks": [
+        22
+      ],
+      "chunkNames": [
+        "npm.decode-uri-component"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "23.client.js",
+      "size": 9123,
+      "chunks": [
+        23
+      ],
+      "chunkNames": [
+        "npm.history"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "23.client.js.map",
+      "size": 107,
+      "chunks": [
+        23
+      ],
+      "chunkNames": [
+        "npm.history"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "24.client.js",
+      "size": 1100,
+      "chunks": [
+        24
+      ],
+      "chunkNames": [
+        "npm.hoist-non-react-statics"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "24.client.js.map",
+      "size": 107,
+      "chunks": [
+        24
+      ],
+      "chunkNames": [
+        "npm.hoist-non-react-statics"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "25.client.js",
+      "size": 5760,
+      "chunks": [
+        25
+      ],
+      "chunkNames": [
+        "npm.loadable"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "25.client.js.map",
+      "size": 107,
+      "chunks": [
+        25
+      ],
+      "chunkNames": [
+        "npm.loadable"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "26.client.js",
+      "size": 2234,
+      "chunks": [
+        26
+      ],
+      "chunkNames": [
+        "npm.mini-create-react-context"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "26.client.js.map",
+      "size": 107,
+      "chunks": [
+        26
+      ],
+      "chunkNames": [
+        "npm.mini-create-react-context"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "27.client.js",
+      "size": 1121,
+      "chunks": [
+        27
+      ],
+      "chunkNames": [
+        "npm.object-assign"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "27.client.js.map",
+      "size": 116,
+      "chunks": [
+        27
+      ],
+      "chunkNames": [
+        "npm.object-assign"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "28.client.js",
+      "size": 1806,
+      "chunks": [
+        28
+      ],
+      "chunkNames": [
+        "npm.process"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "28.client.js.map",
+      "size": 107,
+      "chunks": [
+        28
+      ],
+      "chunkNames": [
+        "npm.process"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "29.client.js",
+      "size": 912,
+      "chunks": [
+        29
+      ],
+      "chunkNames": [
+        "npm.prop-types"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "29.client.js.map",
+      "size": 107,
+      "chunks": [
+        29
+      ],
+      "chunkNames": [
+        "npm.prop-types"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "3.client.js",
+      "size": 874,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "npm.dom-helpers"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "3.client.js.map",
+      "size": 105,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "npm.dom-helpers"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "30.client.js",
+      "size": 4059,
+      "chunks": [
+        30
+      ],
+      "chunkNames": [
+        "npm.query-string"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "30.client.js.map",
+      "size": 107,
+      "chunks": [
+        30
+      ],
+      "chunkNames": [
+        "npm.query-string"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "31.client.js",
+      "size": 6615,
+      "chunks": [
+        31
+      ],
+      "chunkNames": [
+        "npm.react"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "31.client.js.map",
+      "size": 120,
+      "chunks": [
+        31
+      ],
+      "chunkNames": [
+        "npm.react"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "32.client.js",
+      "size": 1188,
+      "chunks": [
+        32
+      ],
+      "chunkNames": [
+        "npm.react-fast-compare"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "32.client.js.map",
+      "size": 107,
+      "chunks": [
+        32
+      ],
+      "chunkNames": [
+        "npm.react-fast-compare"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "33.client.js",
+      "size": 11990,
+      "chunks": [
+        33
+      ],
+      "chunkNames": [
+        "npm.react-helmet"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "33.client.js.map",
+      "size": 107,
+      "chunks": [
+        33
+      ],
+      "chunkNames": [
+        "npm.react-helmet"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "34.client.js",
+      "size": 2567,
+      "chunks": [
+        34
+      ],
+      "chunkNames": [
+        "npm.react-is"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "34.client.js.map",
+      "size": 119,
+      "chunks": [
+        34
+      ],
+      "chunkNames": [
+        "npm.react-is"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "35.client.js",
+      "size": 58589,
+      "chunks": [
+        35
+      ],
+      "chunkNames": [
+        "npm.react-quill"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "35.client.js.map",
+      "size": 107,
+      "chunks": [
+        35
+      ],
+      "chunkNames": [
+        "npm.react-quill"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "36.client.js",
+      "size": 7462,
+      "chunks": [
+        36
+      ],
+      "chunkNames": [
+        "npm.react-router"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "36.client.js.map",
+      "size": 107,
+      "chunks": [
+        36
+      ],
+      "chunkNames": [
+        "npm.react-router"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "37.client.js",
+      "size": 3058,
+      "chunks": [
+        37
+      ],
+      "chunkNames": [
+        "npm.react-router-dom"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "37.client.js.map",
+      "size": 107,
+      "chunks": [
+        37
+      ],
+      "chunkNames": [
+        "npm.react-router-dom"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "38.client.js",
+      "size": 1728,
+      "chunks": [
+        38
+      ],
+      "chunkNames": [
+        "npm.react-side-effect"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "38.client.js.map",
+      "size": 107,
+      "chunks": [
+        38
+      ],
+      "chunkNames": [
+        "npm.react-side-effect"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "39.client.js",
+      "size": 6473,
+      "chunks": [
+        39
+      ],
+      "chunkNames": [
+        "npm.regenerator-runtime"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "39.client.js.map",
+      "size": 107,
+      "chunks": [
+        39
+      ],
+      "chunkNames": [
+        "npm.regenerator-runtime"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "4.client.js",
+      "size": 6778,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [
+        "npm.react-transition-group"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "4.client.js.map",
+      "size": 105,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [
+        "npm.react-transition-group"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "40.client.js",
+      "size": 764,
+      "chunks": [
+        40
+      ],
+      "chunkNames": [
+        "npm.resolve-pathname"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "40.client.js.map",
+      "size": 107,
+      "chunks": [
+        40
+      ],
+      "chunkNames": [
+        "npm.resolve-pathname"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "41.client.js",
+      "size": 5035,
+      "chunks": [
+        41
+      ],
+      "chunkNames": [
+        "npm.scheduler"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "41.client.js.map",
+      "size": 120,
+      "chunks": [
+        41
+      ],
+      "chunkNames": [
+        "npm.scheduler"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "42.client.js",
+      "size": 221,
+      "chunks": [
+        42
+      ],
+      "chunkNames": [
+        "npm.tiny-invariant"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "42.client.js.map",
+      "size": 107,
+      "chunks": [
+        42
+      ],
+      "chunkNames": [
+        "npm.tiny-invariant"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "43.client.js",
+      "size": 588,
+      "chunks": [
+        43
+      ],
+      "chunkNames": [
+        "npm.value-equal"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "43.client.js.map",
+      "size": 107,
+      "chunks": [
+        43
+      ],
+      "chunkNames": [
+        "npm.value-equal"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "5.client.js",
+      "size": 2691,
+      "chunks": [
+        5
+      ],
+      "chunkNames": [
+        "npm.lodash"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "5.client.js.map",
+      "size": 105,
+      "chunks": [
+        5
+      ],
+      "chunkNames": [
+        "npm.lodash"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "6.client.js",
+      "size": 137264,
+      "chunks": [
+        6
+      ],
+      "chunkNames": [
+        "npm.react-dom"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "6.client.js.map",
+      "size": 131,
+      "chunks": [
+        6
+      ],
+      "chunkNames": [
+        "npm.react-dom"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "7.client.js",
+      "size": 579,
+      "chunks": [
+        7
+      ],
+      "chunkNames": [
+        "npm.webpack"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "7.client.js.map",
+      "size": 105,
+      "chunks": [
+        7
+      ],
+      "chunkNames": [
+        "npm.webpack"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "8.client.js",
+      "size": 489,
+      "chunks": [
+        8
+      ],
+      "chunkNames": [
+        "AccButton"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "8.client.js.map",
+      "size": 105,
+      "chunks": [
+        8
+      ],
+      "chunkNames": [
+        "AccButton"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "9.client.js",
+      "size": 254735,
+      "chunks": [
+        9
+      ],
+      "chunkNames": [
+        "JobPostingsForm"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "9.client.js.map",
+      "size": 129,
+      "chunks": [
+        9
+      ],
+      "chunkNames": [
+        "JobPostingsForm"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "assets/bar-people.svg",
+      "size": 22283,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/buildings.svg",
+      "size": 11144,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/icon-opti.svg",
+      "size": 36016,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/landscape-2.svg",
+      "size": 2856,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/locations.svg",
+      "size": 10714,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/networking.svg",
+      "size": 13544,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/phone.svg",
+      "size": 3945,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/profile-01.jpg",
+      "size": 12733,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/sillhouette-ld-opti.svg",
+      "size": 40716,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/skyline.jpg",
+      "size": 70342,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "assets/tools-opti.svg",
+      "size": 78307,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "client.js",
+      "size": 26715,
+      "chunks": [
+        19
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "client.js.map",
+      "size": 101,
+      "chunks": [
+        19
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0,
+        1,
+        6,
+        7,
+        20,
+        36,
+        25,
+        37,
+        29,
+        23,
+        26,
+        34,
+        31,
+        41,
+        24,
+        27,
+        28,
+        32,
+        33,
+        38,
+        40,
+        42,
+        43,
+        19
+      ],
+      "assets": [
+        "0.client.js",
+        "0.client.js.map",
+        "1.client.js",
+        "1.client.js.map",
+        "6.client.js",
+        "6.client.js.map",
+        "7.client.js",
+        "7.client.js.map",
+        "20.client.js",
+        "20.client.js.map",
+        "36.client.js",
+        "36.client.js.map",
+        "25.client.js",
+        "25.client.js.map",
+        "37.client.js",
+        "37.client.js.map",
+        "29.client.js",
+        "29.client.js.map",
+        "23.client.js",
+        "23.client.js.map",
+        "26.client.js",
+        "26.client.js.map",
+        "34.client.js",
+        "34.client.js.map",
+        "31.client.js",
+        "31.client.js.map",
+        "41.client.js",
+        "41.client.js.map",
+        "24.client.js",
+        "24.client.js.map",
+        "27.client.js",
+        "27.client.js.map",
+        "28.client.js",
+        "28.client.js.map",
+        "32.client.js",
+        "32.client.js.map",
+        "33.client.js",
+        "33.client.js.map",
+        "38.client.js",
+        "38.client.js.map",
+        "40.client.js",
+        "40.client.js.map",
+        "42.client.js",
+        "42.client.js.map",
+        "43.client.js",
+        "43.client.js.map",
+        "client.js",
+        "client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0,
+        1,
+        6,
+        7,
+        20,
+        36,
+        25,
+        37,
+        29,
+        23,
+        26,
+        34,
+        31,
+        41,
+        24,
+        27,
+        28,
+        32,
+        33,
+        38,
+        40,
+        42,
+        43,
+        19
+      ],
+      "assets": [
+        "0.client.js",
+        "0.client.js.map",
+        "1.client.js",
+        "1.client.js.map",
+        "6.client.js",
+        "6.client.js.map",
+        "7.client.js",
+        "7.client.js.map",
+        "20.client.js",
+        "20.client.js.map",
+        "36.client.js",
+        "36.client.js.map",
+        "25.client.js",
+        "25.client.js.map",
+        "37.client.js",
+        "37.client.js.map",
+        "29.client.js",
+        "29.client.js.map",
+        "23.client.js",
+        "23.client.js.map",
+        "26.client.js",
+        "26.client.js.map",
+        "34.client.js",
+        "34.client.js.map",
+        "31.client.js",
+        "31.client.js.map",
+        "41.client.js",
+        "41.client.js.map",
+        "24.client.js",
+        "24.client.js.map",
+        "27.client.js",
+        "27.client.js.map",
+        "28.client.js",
+        "28.client.js.map",
+        "32.client.js",
+        "32.client.js.map",
+        "33.client.js",
+        "33.client.js.map",
+        "38.client.js",
+        "38.client.js.map",
+        "40.client.js",
+        "40.client.js.map",
+        "42.client.js",
+        "42.client.js.map",
+        "43.client.js",
+        "43.client.js.map",
+        "client.js",
+        "client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "components-Home": {
+      "chunks": [
+        0,
+        1,
+        4,
+        3,
+        15
+      ],
+      "assets": [
+        "0.client.js",
+        "0.client.js.map",
+        "1.client.js",
+        "1.client.js.map",
+        "4.client.js",
+        "4.client.js.map",
+        "3.client.js",
+        "3.client.js.map",
+        "15.client.js",
+        "15.client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "client-components-dashboard-worker-WorkerDashboard": {
+      "chunks": [
+        0,
+        1,
+        5,
+        2,
+        14
+      ],
+      "assets": [
+        "0.client.js",
+        "0.client.js.map",
+        "1.client.js",
+        "1.client.js.map",
+        "5.client.js",
+        "5.client.js.map",
+        "2.client.js",
+        "2.client.js.map",
+        "14.client.js",
+        "14.client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "client-components-dashboard-company-CompanyDashboard": {
+      "chunks": [
+        0,
+        1,
+        5,
+        2,
+        11
+      ],
+      "assets": [
+        "0.client.js",
+        "0.client.js.map",
+        "1.client.js",
+        "1.client.js.map",
+        "5.client.js",
+        "5.client.js.map",
+        "2.client.js",
+        "2.client.js.map",
+        "11.client.js",
+        "11.client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "client-components-dashboard-search-JobSearch": {
+      "chunks": [
+        0,
+        1,
+        4,
+        3,
+        13
+      ],
+      "assets": [
+        "0.client.js",
+        "0.client.js.map",
+        "1.client.js",
+        "1.client.js.map",
+        "4.client.js",
+        "4.client.js.map",
+        "3.client.js",
+        "3.client.js.map",
+        "13.client.js",
+        "13.client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "client-components-dashboard-JobPost": {
+      "chunks": [
+        0,
+        1,
+        22,
+        30,
+        10
+      ],
+      "assets": [
+        "0.client.js",
+        "0.client.js.map",
+        "1.client.js",
+        "1.client.js.map",
+        "22.client.js",
+        "22.client.js.map",
+        "30.client.js",
+        "30.client.js.map",
+        "10.client.js",
+        "10.client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "client-components-dashboard-postings-JobPostings": {
+      "chunks": [
+        0,
+        1,
+        4,
+        3,
+        12
+      ],
+      "assets": [
+        "0.client.js",
+        "0.client.js.map",
+        "1.client.js",
+        "1.client.js.map",
+        "4.client.js",
+        "4.client.js.map",
+        "3.client.js",
+        "3.client.js.map",
+        "12.client.js",
+        "12.client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "components-register-Register": {
+      "chunks": [
+        0,
+        1,
+        4,
+        3,
+        18
+      ],
+      "assets": [
+        "0.client.js",
+        "0.client.js.map",
+        "1.client.js",
+        "1.client.js.map",
+        "4.client.js",
+        "4.client.js.map",
+        "3.client.js",
+        "3.client.js.map",
+        "18.client.js",
+        "18.client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "components-Welcome": {
+      "chunks": [
+        0,
+        1,
+        2,
+        16
+      ],
+      "assets": [
+        "0.client.js",
+        "0.client.js.map",
+        "1.client.js",
+        "1.client.js.map",
+        "2.client.js",
+        "2.client.js.map",
+        "16.client.js",
+        "16.client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "components-login-Login": {
+      "chunks": [
+        0,
+        1,
+        39,
+        2,
+        17
+      ],
+      "assets": [
+        "0.client.js",
+        "0.client.js.map",
+        "1.client.js",
+        "1.client.js.map",
+        "39.client.js",
+        "39.client.js.map",
+        "2.client.js",
+        "2.client.js.map",
+        "17.client.js",
+        "17.client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "AccButton": {
+      "chunks": [
+        8
+      ],
+      "assets": [
+        "8.client.js",
+        "8.client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "JobPostingsForm": {
+      "chunks": [
+        6,
+        7,
+        35,
+        21,
+        9
+      ],
+      "assets": [
+        "6.client.js",
+        "6.client.js.map",
+        "7.client.js",
+        "7.client.js.map",
+        "35.client.js",
+        "35.client.js.map",
+        "21.client.js",
+        "21.client.js.map",
+        "9.client.js",
+        "9.client.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 8,
+      "debug": false
+    }
+  },
+  "children": []
+}
