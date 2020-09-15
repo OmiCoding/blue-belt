@@ -1,12 +1,10 @@
 # Root level ignores
 node_modules/
-cert/
+cert/*
 dhparam/
 data/
 .env
 
-cert/etc/
-cert/var/
 
 
 # App level ignores
