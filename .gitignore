@@ -5,6 +5,9 @@ dhparam/
 data/
 .env
 
+cert/etc/
+cert/var/
+
 
 # App level ignores
 app/client
