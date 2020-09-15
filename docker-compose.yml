@@ -1,11 +1,24 @@
 version: "3.8"
 
 services:
+  nodejs:
+    build:
+      context: .
+    container_name: nodejs-container
+    depends_on:
+      - db
+      - cache
+    networks:
+      - app-network
+      - backend
+      - cache
+    restart: unless-stopped
+
   db:
     image: mongo:4.2.6-bionic
     restart: unless-stopped
     container_name: mongo-container
-    expose:
+    ports:
       - "27017:27017"
     environment:
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USERNAME}
@@ -24,21 +37,21 @@ services:
     restart: unless-stopped
     container_name: redis-container
     command: redis-server --appendonly yes
-    expose:
+    ports:
       - "6379:6379"
     volumes:
       - ./.docker/redisdb/data:/data
       - ./.docker/redisdb/config/redis.conf:/usr/local/etc/redis/redis.conf
     networks:
       - cache
-  
+
   webserver:
     image: nginx:1.17-alpine
     container_name: nginx-container
     restart: unless-stopped
     ports:
-      - "80:80",
-      - "443:443",
+      - "80:80"
+      - "443:443"
     volumes:
       - ./web:/var/www/html
       - ./nginx/with-ssl:/etc/nginx/conf.d
@@ -60,8 +73,8 @@ services:
     depends_on:
       - webserver
 
-    command: certonly --webroot --webroot-path=/var/www/html --email bitcoder247@protonmail.com --agree-tos --no-eff-email --staging -d blubelt.com -d www.blubelt.com
-    
+    command: delete
+
 networks:
   app-network:
     driver: bridge
