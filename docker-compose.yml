@@ -73,7 +73,7 @@ services:
     depends_on:
       - webserver
 
-    command: delete
+    command: delete --cert-name blubelt.com
 
 networks:
   app-network:
