@@ -21,7 +21,7 @@ export const companyDashboard = (req, res, next) => {
   try {
     const cache = createCache()
 
-    const webStats = path.resolve("../build/web/loadable-stats.json")
+    const webStats = "/web/loadable-stats.json"
 
     const webExtractor = new ChunkExtractor({
       statsFile: webStats,

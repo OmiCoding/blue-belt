@@ -15,7 +15,7 @@ import template from "../config/template"
 
 export const registerRender = (req, res, next) => {
   try {
-    const webStats = path.resolve("../build/web/loadable-stats.json")
+    const webStats = "/web/loadable-stats.json"
 
     const webExtractor = new ChunkExtractor({ statsFile: webStats })
 
