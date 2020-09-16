@@ -10,15 +10,11 @@ docker-compose.prod.yml
 
 
 # App level ignores
-app/client
-app/server
-app/shared
-app/utils
-app/babel.config.json
-app/package.json
-app/webpack.config.js
-app/.eslintrc.js
-app/.prettierrc.js
+app/build
+app/build/
+app/build/*
+app/build/server
+app/build/server/*
+app/build/web
+app/build/web/*
 app/node_modules
-app/yarn.lock
-app/yarn-error.log
