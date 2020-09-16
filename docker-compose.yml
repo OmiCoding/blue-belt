@@ -54,7 +54,7 @@ services:
       - "443:443"
     volumes:
       - ./web:/var/www/html
-      - ./nginx/non-ssl:/etc/nginx/conf.d
+      - ./nginx/with-ssl:/etc/nginx/conf.d
       - ./cert/etc:/etc/letsencrypt
       - ./cert/var:/var/lib/letsencrypt
       - ./dhparam:/etc/ssl/certs
