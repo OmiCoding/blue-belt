@@ -110,8 +110,8 @@ export const start = async () => {
       ...MONGO_OPTIONS,
     })
 
-    const cert = fs.readFileSync(path.resolve(__dirname + "/cert"))
-    console.log(cert)
+    console.log(path.resolve("cert"))
+    // const cert = fs.readFileSync(path.resolve(__dirname + "/cert"))
 
     // .listen(80)
     // .listen(443)
