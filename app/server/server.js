@@ -110,7 +110,9 @@ export const start = async () => {
       ...MONGO_OPTIONS,
     })
 
-    const cert = fs.readFileSync(path.resolve("cert"))
+    const cert = fs.readFileSync(
+      path.resolve("cert/etc/live/blubelt.com/cert.pem")
+    )
     console.log(cert)
 
     // .listen(80)
