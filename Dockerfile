@@ -10,6 +10,8 @@ RUN apt-get install -y build-essential && apt-get -y install python && apt-get i
 
 RUN mkdir -p /home/node/app/node_modules
 
+RUN mkdir -p /home/node/app/certs
+
 RUN chown -R node:node /home/node/app
 
 WORKDIR /home/node/app
