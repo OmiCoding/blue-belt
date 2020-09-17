@@ -13,7 +13,7 @@ services:
       - backend
       - cache
     volumes:
-      - "./cert/etc/live/blubelt.com:/home/node/app/cert"
+      - "./cert/etc/live/blubelt.com:/home/node/app/certs"
     restart: unless-stopped
 
   db:

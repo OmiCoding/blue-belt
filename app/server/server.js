@@ -1,3 +1,4 @@
+import fs from "fs"
 import path from "path"
 import https from "https"
 import http from "http"
@@ -108,6 +109,9 @@ export const start = async () => {
     await mongoose.connect(MONGODB_URI, {
       ...MONGO_OPTIONS,
     })
+
+    const cert = fs.readFileSync(path.resolve(__dirname + "/cert"))
+    console.log(cert)
 
     // .listen(80)
     // .listen(443)
