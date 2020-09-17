@@ -18,9 +18,13 @@ export const renderer = (req, res, next) => {
   try {
     const cache = createCache()
 
-    const webStats = "/web/loadable-stats.json"
+    const webStats = path.resolve("../web/loadable-stats.json")
 
-    const webExtractor = new ChunkExtractor({ statsFile: webStats })
+    const webExtractor = new ChunkExtractor({
+      statsFile: webStats,
+      publicPath: "/build/web/",
+      outputPath: "/home/omi/blue-belt/app/build/web",
+    })
 
     const app = (
       <CacheProvider value={cache}>
