@@ -84,7 +84,7 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 // The location of the client/server code
-app.use(express.static(path.resolve("build")))
+app.use(express.static(path.resolve(__dirname + "/build")))
 
 // base path routes
 app.use("/register", register)
