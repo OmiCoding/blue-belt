@@ -16,7 +16,7 @@ import { Strategy as LocalStrategy } from "passport-local"
 
 import {
   PORT,
-  CREDENTIALS,
+  // CREDENTIALS,
   REDIS_OPTIONS,
   SESSION_OPTIONS,
   MONGODB_URI,
@@ -58,8 +58,8 @@ passport.use(
 
 const app = express()
 
-http.createServer(app)
-https.createServer(CREDENTIALS, app)
+// http.createServer(app)
+// https.createServer(CREDENTIALS, app)
 
 // Setting up session storage
 const RedisStore = connectRedis(session)
@@ -105,16 +105,15 @@ app.get("*", renderer)
 // Function to start the server
 export const start = async () => {
   try {
-    await mongoose
-      .connect(MONGODB_URI, {
-        ...MONGO_OPTIONS,
-      })
+    await mongoose.connect(MONGODB_URI, {
+      ...MONGO_OPTIONS,
+    })
 
-      .listen(80)
-      .listen(443)
-    // app.listen(PORT, () => {
-    //   console.log(`Listening on port ${PORT}....`)
-    // })
+    // .listen(80)
+    // .listen(443)
+    app.listen(PORT, () => {
+      console.log(`Listening on port ${PORT}....`)
+    })
   } catch (e) {
     console.error(e)
   }
