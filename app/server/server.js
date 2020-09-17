@@ -110,7 +110,7 @@ export const start = async () => {
       ...MONGO_OPTIONS,
     })
 
-    console.log(path.resolve("certs"))
+    console.log(path.resolve("cert.pem"))
     const cert = fs.readFileSync(path.resolve("certs") + "/cert.pem")
     // console.log(cert)
 
