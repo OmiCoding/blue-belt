@@ -18,4 +18,3 @@ app/build/server/*
 app/build/web
 app/build/web/*
 app/node_modules
-app/server/test.js
