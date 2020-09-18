@@ -12,8 +12,6 @@ services:
       - app-network
       - backend
       - cache
-    volumes:
-      - "./cert/etc/live/blubelt.com:/home/node/app/certs"
     restart: unless-stopped
 
   db:

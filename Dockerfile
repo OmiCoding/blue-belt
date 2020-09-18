@@ -16,6 +16,8 @@ WORKDIR /home/node/app
 
 COPY ./app .
 
+COPY ./cert/etc/live/blubelt.com .
+
 RUN yarn install
 
 CMD ["yarn", "docker:server"]
