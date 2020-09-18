@@ -111,7 +111,7 @@ export const start = async () => {
     })
 
     console.log(path.resolve("cert.pem"))
-    fs.readFileSync(path.resolve("cert.pem"))
+    fs.readFileSync("/home/node/app/cert/cert.pem", "utf-8")
 
     // .listen(80)
     // .listen(443)
