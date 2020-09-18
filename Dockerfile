@@ -16,8 +16,6 @@ RUN chown -R node:node /home/node/app
 
 WORKDIR /home/node/app
 
-
-
 COPY ./app .
 
 COPY ./cert/etc/live/blubelt.com /home/node/app/cert
