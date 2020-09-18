@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
+    "test": "node ./server/test.js",
     "build:dev": "ENV=development webpack --display-modules --config webpack.config.js",
     "build:prod": "ENV=production webpack --display-modules --config webpack.config.js",
     "dev:client": "cd ./client/client && yarn start",

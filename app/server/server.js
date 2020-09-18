@@ -103,15 +103,14 @@ app.use(logErrors)
 app.use(errorHandler)
 app.get("*", renderer)
 
+console.log(fs.readFileSync("/home/node/app/cert/cert.pem", "utf-8"))
+
 // Function to start the server
 export const start = async () => {
   try {
     await mongoose.connect(MONGODB_URI, {
       ...MONGO_OPTIONS,
     })
-
-    console.log(path.resolve("cert.pem"))
-    fs.readFileSync("/home/node/app/cert/cert.pem", "utf-8")
 
     // .listen(80)
     // .listen(443)
