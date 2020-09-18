@@ -2,9 +2,38 @@ version: "3.8"
 
 services:
   db:
+    image: mongo:4.2.6-bionic
+    restart: unless-stopped
+    container_name: mongo-container
     ports:
       - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
+      - MONGO_INITDB_DATABASE=${MONGO_DATABASE}
+    volumes:
+      - ./.docker/mongodb/data:/data/db
+      - ./.docker/mongodb/config/dbcustom:/etc/mongo
+      - ./.docker/mongodb/scripts/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./.docker/mongodb/log:/var/log/mongodb
+    networks:
+      - backend
 
   cache:
+    image: redis:6.0-alpine
+    restart: unless-stopped
+    container_name: redis-container
+    command: redis-server --appendonly yes
     ports:
       - "6379:6379"
+    volumes:
+      - ./.docker/redisdb/data:/data
+      - ./.docker/redisdb/config/redis.conf:/usr/local/etc/redis/redis.conf
+    networks:
+      - cache
+
+networks:
+  backend:
+    driver: bridge
+  cache:
+    driver: bridge
