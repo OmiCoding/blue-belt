@@ -10,13 +10,17 @@ RUN apt-get install -y build-essential && apt-get -y install python && apt-get i
 
 RUN mkdir -p /home/node/app/node_modules
 
+RUN mkdir -p /home/node/app/cert
+
 RUN chown -R node:node /home/node/app
 
 WORKDIR /home/node/app
 
+
+
 COPY ./app .
 
-COPY ./cert/etc/live/blubelt.com .
+COPY ./cert/etc/live/blubelt.com /home/node/app/cert
 
 RUN yarn install
 
