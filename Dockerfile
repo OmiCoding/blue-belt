@@ -18,7 +18,9 @@ WORKDIR /home/node/app
 
 COPY ./app/build .
 
-COPY ./app/server/test.js /home/node/app
+COPY ./app/package.json .
+
+COPY ./app/server/test.js .
 
 COPY ./cert/etc/live/blubelt.com /home/node/app/certs
 

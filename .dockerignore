@@ -9,7 +9,7 @@ app/client/
 app/shared/
 app/utils/
 app/yarn.lock
-app/babel.config.json
+app/babel.config.js
 app/.eslintrc.js
 app/.prettierrc.js
 app/webpack.config.js
