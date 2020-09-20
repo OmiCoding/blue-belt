@@ -17,7 +17,7 @@ import { Strategy as LocalStrategy } from "passport-local"
 
 import {
   PORT,
-  // CREDENTIALS,
+  CREDENTIALS,
   REDIS_OPTIONS,
   SESSION_OPTIONS,
   MONGODB_URI,
@@ -59,8 +59,8 @@ passport.use(
 
 const app = express()
 
-// http.createServer(app)
-// https.createServer(CREDENTIALS, app)
+const httpServer = http.createServer(app)
+const httpsServer = https.createServer(CREDENTIALS, app)
 
 // Setting up session storage
 const RedisStore = connectRedis(session)
@@ -103,7 +103,6 @@ app.use(logErrors)
 app.use(errorHandler)
 app.get("*", renderer)
 
-console.log(path.resolve("cert"))
 console.log(fs.readFileSync("/home/node/app/certs/cert.pem", "utf-8"))
 
 // Function to start the server
@@ -113,10 +112,8 @@ export const start = async () => {
       ...MONGO_OPTIONS,
     })
 
-    // .listen(80)
-    // .listen(443)
-    app.listen(PORT, () => {
-      console.log(`Listening on port ${PORT}....`)
+    httpsServer.listen(443, () => {
+      console.log(`Now listening on port ${PORT}...`)
     })
   } catch (e) {
     console.error(e)
