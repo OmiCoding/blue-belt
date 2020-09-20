@@ -13,7 +13,8 @@ docker-compose.prod.yml
 app/build
 app/build/
 app/build/*
-
+app/build/server
+app/build/server/*
 app/build/web
 app/build/web/*
 app/node_modules
