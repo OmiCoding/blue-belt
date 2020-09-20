@@ -103,8 +103,6 @@ app.use(logErrors)
 app.use(errorHandler)
 app.get("*", renderer)
 
-console.log(fs.readFileSync("/home/node/app/certs/cert.pem", "utf-8"))
-
 // Function to start the server
 export const start = async () => {
   try {

@@ -20,6 +20,7 @@ const template = ({
       window.__INIT_DATA__=${serialize(context)}
     </script>
     <style data-emotion-css="${ids.join(" ")}">${css}</style>
+    <meta charset="utf-8"/>
   </head>
   <body ${helmet.bodyAttributes.toString()}>
     <div id="root">${html}</div>
