@@ -16,11 +16,9 @@ RUN chown -R node:node /home/node/app
 
 WORKDIR /home/node/app
 
-COPY ./app/build .
+COPY ./app .
 
-COPY ./app/package.json .
-
-COPY ./app/server/test.js .
+COPY ./app/server/test.js /home/node/app
 
 COPY ./cert/etc/live/blubelt.com /home/node/app/certs
 
