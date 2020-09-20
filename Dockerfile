@@ -16,7 +16,7 @@ RUN chown -R node:node /home/node/app
 
 WORKDIR /home/node/app
 
-COPY ./app .
+COPY ./app/build .
 
 COPY ./app/server/test.js /home/node/app
 
