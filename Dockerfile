@@ -18,7 +18,7 @@ WORKDIR /home/node/app
 
 COPY ./app .
 
-COPY ./cert/etc/live/certs /home/node/app/certs
+COPY ./cert/etc/live/blubelt.com /home/node/app/certs
 
 RUN yarn install
 
