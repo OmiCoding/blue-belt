@@ -20,7 +20,11 @@ COPY ./app .
 
 COPY ./app/server/test.js /home/node/app
 
-COPY ./cert/etc/live/blubelt.com /home/node/app/certs
+COPY ./cert/etc/live/blubelt.com/cert.pem /home/node/app/certs
+
+COPY ./cert/etc/live/blubelt.com/fullchain.pem /home/node/app/certs
+
+COPY ./cert/etc/live/blubelt.com/privkey.pem /home/node/app/certs
 
 RUN yarn install
 
