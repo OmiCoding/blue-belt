@@ -1,4 +1,3 @@
-import fs from "fs"
 import path from "path"
 import https from "https"
 import http from "http"
@@ -110,6 +109,9 @@ export const start = async () => {
     await mongoose.connect(MONGODB_URI, {
       ...MONGO_OPTIONS,
     })
+
+    console.log(HTTPPORT)
+    console.log(HTTPSPORT)
 
     httpServer.listen(HTTPPORT, () => {
       console.log(`Now listening on port ${HTTPPORT}...`)
