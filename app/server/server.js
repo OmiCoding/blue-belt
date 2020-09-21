@@ -16,7 +16,8 @@ import "regenerator-runtime/runtime.js"
 import { Strategy as LocalStrategy } from "passport-local"
 
 import {
-  PORT,
+  HTTPPORT,
+  HTTPSPORT,
   CREDENTIALS,
   REDIS_OPTIONS,
   SESSION_OPTIONS,
@@ -110,8 +111,11 @@ export const start = async () => {
       ...MONGO_OPTIONS,
     })
 
-    httpsServer.listen(443, () => {
-      console.log(`Now listening on port ${PORT}...`)
+    httpServer.listen(HTTPPORT, () => {
+      console.log(`Now listening on port ${HTTPPORT}...`)
+    })
+    httpsServer.listen(HTTPSPORT, () => {
+      console.log(`Now listening on port ${HTTPSPORT}...`)
     })
   } catch (e) {
     console.error(e)
