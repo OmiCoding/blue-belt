@@ -14,6 +14,9 @@ exports.serverConfig = ({ entry, filename, env, target, boolVal }) => {
     mode: env,
     entry: entry,
     target: target,
+    node: {
+      __dirname: false,
+    },
     output: {
       filename: filename,
       path: path.join(BUILD_PATH, "server"),

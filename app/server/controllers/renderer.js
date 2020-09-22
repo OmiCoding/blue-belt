@@ -18,7 +18,10 @@ export const renderer = (req, res, next) => {
   try {
     const cache = createCache()
 
-    const webStats = path.resolve("../app/build/web/loadable-stats.json")
+    const webStats =
+      process.env.ENV === "production"
+        ? "/home/node/app/build/web/loadable-stats.json"
+        : path.resolve("build/web/loadable-stats.json")
 
     // "/build/web/"
     // "/home/omi/blue-belt/app/build/web"
