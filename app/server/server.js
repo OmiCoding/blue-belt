@@ -98,6 +98,7 @@ app.use(passport.session())
 const staticPath = process.env.ENV === "production" ? "build" : "build"
 
 console.log(staticPath)
+console.log(path.resolve(staticPath))
 
 app.use(express.static(path.resolve(staticPath)))
 

@@ -28,7 +28,7 @@ export const renderer = (req, res, next) => {
 
     const webExtractor = new ChunkExtractor({
       statsFile: "/home/node/app/build/web/loadable-stats.json",
-      publicPath: "/web/",
+      publicPath: "web",
       outputPath: "/home/node/app/build/web",
     })
 
