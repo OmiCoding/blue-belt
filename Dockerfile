@@ -26,7 +26,7 @@ COPY ./cert/etc/live/blubelt.com/privkey.pem /home/node/app/certs
 
 RUN yarn install
 
-CMD ["yarn", "docker:server"]
+CMD ["yarn", "build:prod", "&&", "docker:server"]
 
 # build-essential
 # python

@@ -5,12 +5,12 @@ node_modules/
 
 
 app/node_modules/
-app/client/
-app/server/
-app/shared/
-app/utils/
-app/yarn.lock
-app/babel.config.js
-app/.eslintrc.js
-app/.prettierrc.js
-app/webpack.config.js
+# app/client/
+# app/server/
+# app/shared/
+# app/utils/
+# app/yarn.lock
+# app/babel.config.js
+# app/.eslintrc.js
+# app/.prettierrc.js
+# app/webpack.config.js
