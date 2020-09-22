@@ -95,12 +95,12 @@ app.use(passport.session())
 
 // The location of the client/server code
 
-const staticPath = process.env.ENV === "production" ? "build" : "build"
+// const staticPath = process.env.ENV === "production" ? "build" : "build"
 
-console.log(staticPath)
-console.log(path.resolve(staticPath))
+// console.log(staticPath)
+// console.log(path.resolve("/home/node/app/build"))
 
-app.use(express.static(path.resolve(staticPath)))
+app.use(express.static("/home/node/app/build"))
 
 // base path routes
 app.use("/register", register)
