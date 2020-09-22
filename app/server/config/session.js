@@ -22,6 +22,6 @@ export const SESSION_OPTIONS = {
     sameSite: true,
     httpOnly: true,
     maxAge: +SESSION_IDLE_TIMEOUT,
-    secure: process.env.ENV === "production" ? true : false, // Important for HTTPS
+    secure: false, // Important for HTTPS
   },
 }
