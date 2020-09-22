@@ -110,9 +110,6 @@ export const start = async () => {
       ...MONGO_OPTIONS,
     })
 
-    console.log(HTTPPORT)
-    console.log(HTTPSPORT)
-
     httpServer.listen(HTTPPORT, () => {
       console.log(`Now listening on port ${HTTPPORT}...`)
     })
