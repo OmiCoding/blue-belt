@@ -19,9 +19,8 @@ export const SESSION_OPTIONS = {
   rolling: true,
   proxy: process.env.ENV === "production" ? true : false, // When HTTPS is being used
   cookie: {
-    sameSite: true,
     httpOnly: true,
     maxAge: +SESSION_IDLE_TIMEOUT,
-    secure: false, // Important for HTTPS
+    secure: process.env.ENV === "production" ? true : false, // Important for HTTPS
   },
 }
