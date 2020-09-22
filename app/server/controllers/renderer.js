@@ -26,7 +26,10 @@ export const renderer = (req, res, next) => {
     const webExtractor = new ChunkExtractor({
       statsFile: webStats,
       publicPath: "/web/",
-      outputPath: path.resolve("build/web"),
+      outputPath:
+        process.env.ENV === "production"
+          ? path.resolve("../web")
+          : path.resolve("build/web"),
     })
 
     const app = (
