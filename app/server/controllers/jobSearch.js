@@ -21,9 +21,23 @@ export const jobSearch = async (req, res, next) => {
 
     const { extractCritical } = createEmotionServer(cache)
 
-    const webStats = path.resolve("../build/web/loadable-stats.json")
+    // const webStats = "/web/loadable-stats.json"
 
-    const webExtractor = new ChunkExtractor({ statsFile: webStats })
+    // const webExtractor = new ChunkExtractor({ statsFile: webStats })
+
+    const webStats =
+      process.env.ENV === "production"
+        ? "/home/node/app/build/web/loadable-stats.json"
+        : path.resolve("build/web/loadable-stats.json")
+
+    // "/build/web/"
+    // "/home/omi/blue-belt/app/build/web"
+
+    const webExtractor = new ChunkExtractor({
+      statsFile: "/home/node/app/build/web/loadable-stats.json",
+      publicPath: "/web/",
+      outputPath: "/home/node/app/build/web",
+    })
 
     const app = renderToString(
       <CacheProvider value={cache}>

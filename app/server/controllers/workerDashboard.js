@@ -20,9 +20,20 @@ export const workerDashboard = (req, res, next) => {
     console.log(req.user)
     const cache = createCache()
 
-    const webStats = path.resolve("../build/web/loadable-stats.json")
+    // const webStats = "/web/loadable-stats.json"
 
-    const webExtractor = new ChunkExtractor({ statsFile: webStats })
+    // const webExtractor = new ChunkExtractor({ statsFile: webStats })
+
+    const webStats =
+      process.env.ENV === "production"
+        ? "/home/node/app/build/web/loadable-stats.json"
+        : path.resolve("build/web/loadable-stats.json")
+
+    const webExtractor = new ChunkExtractor({
+      statsFile: "/home/node/app/build/web/loadable-stats.json",
+      publicPath: "/web/",
+      outputPath: "/home/node/app/build/web",
+    })
 
     // const context = {
     //   authenticated: req.user.authenticated,
