@@ -17,11 +17,11 @@ export const SESSION_OPTIONS = {
   resave: false,
   saveUninitialized: false,
   rolling: true,
-  proxy: false, // When HTTPS is being used
+  proxy: process.env.ENV === "production" ? true : false, // When HTTPS is being used
   cookie: {
     sameSite: true,
     httpOnly: true,
     maxAge: +SESSION_IDLE_TIMEOUT,
-    secure: true, // Important for HTTPS
+    secure: false, // Important for HTTPS
   },
 }

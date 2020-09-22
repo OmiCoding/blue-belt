@@ -16,7 +16,7 @@ exports.clientConfig = ({ entry, filename, boolVal, env, target }) => {
     output: {
       filename: filename,
       path: path.join(BUILD_PATH, target),
-      publicPath: `/${target}`,
+      publicPath: `/${target}/`,
     },
     plugins: [
       new webpack.DefinePlugin({

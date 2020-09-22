@@ -60,7 +60,10 @@ passport.use(
 const app = express()
 
 const httpServer = http.createServer(app)
-const httpsServer = https.createServer(CREDENTIALS, app)
+let httpsServer
+if (CREDENTIALS) {
+  httpsServer = https.createServer(CREDENTIALS, app)
+}
 
 // Setting up session storage
 const RedisStore = connectRedis(session)
@@ -91,7 +94,10 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 // The location of the client/server code
-app.use(express.static(path.resolve("build")))
+
+const staticPath = process.env.ENV === "production" ? "build" : "build"
+
+app.use(express.static(path.resolve(staticPath)))
 
 // base path routes
 app.use("/register", register)
@@ -103,8 +109,8 @@ app.use(logErrors)
 app.use(errorHandler)
 app.get("*", renderer)
 
-// Function to start the server
-export const start = async () => {
+// function to start production server
+export const startProd = async () => {
   try {
     await mongoose.connect(MONGODB_URI, {
       ...MONGO_OPTIONS,
@@ -115,6 +121,21 @@ export const start = async () => {
     })
     httpsServer.listen(HTTPSPORT, () => {
       console.log(`Now listening on port ${HTTPSPORT}...`)
+    })
+  } catch (e) {
+    console.error(e)
+  }
+}
+
+// function to start development server
+export const startDev = async () => {
+  try {
+    await mongoose.connect(MONGODB_URI, {
+      ...MONGO_OPTIONS,
+    })
+
+    app.listen(HTTPPORT, () => {
+      console.log(`Listening on port ${HTTPPORT}...`)
     })
   } catch (e) {
     console.error(e)

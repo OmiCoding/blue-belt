@@ -7,12 +7,12 @@
     "build:dev": "ENV=development webpack --display-modules --config webpack.config.js",
     "build:prod": "ENV=production webpack --display-modules --config webpack.config.js",
     "dev:client": "cd ./client/client && yarn start",
-    "dev:server": " ENV=development webpack -w & nodemon ./build/server/server.js",
+    "dev:server": "webpack -w & ENV=development nodemon ./build/server/server.js",
     "prod:server": "ENV=production node ./build/server/server.js",
-    "dev:up": "cd .. && sudo docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d",
+    "dev:up": "cd .. && sudo docker-compose -f docker-compose.dev.yml up -d",
     "prod:up": "cd .. && sudo docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d",
     "dev:app": "concurrently \"dev:up\" \"dev:server\"",
-    "docker:server": "cd ./build/server && nodemon server.js",
+    "docker:server": "cd ./build/server && ENV=production nodemon server.js",
     "dev": "concurrently \"dev:client\" \"dev:server\""
   },
   "dependencies": {

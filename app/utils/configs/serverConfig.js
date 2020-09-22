@@ -17,7 +17,7 @@ exports.serverConfig = ({ entry, filename, env, target, boolVal }) => {
     output: {
       filename: filename,
       path: path.join(BUILD_PATH, "server"),
-      publicPath: `/server`,
+      publicPath: `/server/`,
       libraryTarget: "commonjs2",
     },
     plugins: [

@@ -1,3 +1,3 @@
-import { start } from "./server"
+import { startProd, startDev } from "./server"
 
-start()
+process.env.ENV === "production" ? startProd() : startDev()

@@ -19,7 +19,10 @@ MONGO_OPTIONS = {
   autoIndex: false,
   useUnifiedTopology: true,
 }
-MONGODB_URI = "mongodb://db:27017/blubelt"
+MONGODB_URI =
+  process.env.ENV === "production"
+    ? "mongodb://db:27017/blubelt"
+    : "mongodb://localhost:27017"
 // }
 // else {
 //   const {
