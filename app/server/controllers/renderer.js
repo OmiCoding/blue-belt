@@ -27,7 +27,7 @@ export const renderer = (req, res, next) => {
     // "/home/omi/blue-belt/app/build/web"
 
     const webExtractor = new ChunkExtractor({
-      statsFile: webStats,
+      statsFile: "/home/node/app/build/web/loadable-stats.json",
       publicPath: "/web/",
       outputPath: "/home/node/app/build/web",
     })
