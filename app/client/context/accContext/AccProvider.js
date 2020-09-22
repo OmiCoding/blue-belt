@@ -45,6 +45,7 @@ const AccProvider = ({ children }) => {
     axios
       .request(`/dashboard/acc`, {
         method: "get",
+        baseURL: "https://blubelt.com/",
         headers: {
           "Content-Type": "application/json",
         },

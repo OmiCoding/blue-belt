@@ -30,7 +30,7 @@ const AppProvider = ({ children, context }) => {
   const authAccount = () => {
     axios("/dashboard/auth", {
       method: "get",
-      baseURL: "http://localhost:8080/",
+      baseURL: "https://blubelt.com/",
       headers: {
         "Content-Type": "application/json",
       },
