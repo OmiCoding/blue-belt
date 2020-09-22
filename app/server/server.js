@@ -102,6 +102,14 @@ app.use(passport.session())
 
 app.use(express.static("/home/node/app/build"))
 
+app.use(function (req, res, next) {
+  res.setHeader("Access-Control-Allow-Origin", "*")
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE")
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type")
+  res.setHeader("Access-Control-Allow-Credentials", true)
+  next()
+})
+
 // base path routes
 app.use("/register", register)
 app.use("/login", login)
@@ -110,6 +118,7 @@ app.use("/welcome", welcome)
 // All routes will point here at '*', TODO: Set up error handling routes
 app.use(logErrors)
 app.use(errorHandler)
+
 app.get("*", renderer)
 
 // function to start production server
