@@ -31,7 +31,7 @@ export const renderer = (req, res, next) => {
       publicPath: "/web/",
       outputPath:
         process.env.ENV === "production"
-          ? path.resolve("../web")
+          ? "/home/node/app/build/web"
           : path.resolve("build/web"),
     })
 
