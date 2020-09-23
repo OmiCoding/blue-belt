@@ -1,5 +1,6 @@
 import React from "react"
 import loadable from "@loadable/component"
+import { Link } from "react-router-dom"
 import {
   NavContainer,
   NavHeader,
@@ -21,6 +22,7 @@ const DashboardNav = ({ activate, handleMenu }) => {
           <ShowMenu activate={activate} handleMenu={handleMenu} />
           <NavHeader>
             <h1>blubelt</h1>
+            <Link to={"/"} />
           </NavHeader>
         </NavItemWrapper>
         <NavItemWrapper>
