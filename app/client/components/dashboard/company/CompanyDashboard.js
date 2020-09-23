@@ -38,7 +38,7 @@ const CompanyDashboard = () => {
 
   const accContext = useContext(AccContext)
 
-  const { init, getCompanyDetails } = accContext
+  const { init, getCompanyDetails, username } = accContext
 
   const [state, setState] = useState({
     active: false,
@@ -135,6 +135,7 @@ const CompanyDashboard = () => {
             active={active}
             device={device}
             handleChoice={handleChoice}
+            username={username}
           />
           <DeviceLayout ref={mainRef}>
             <DashboardMain>

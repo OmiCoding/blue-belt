@@ -49,7 +49,9 @@ const WorkerMenu = ({ active, device, username, handleChoice }, ref) => {
                     <i className={elem[1]} />
                   </span>
                   <h3>{elem[0]}</h3>
-                  <Link to={`/dashboard/worker/${username}/${elem[0]}`} />
+                  <Link
+                    to={`/dashboard/worker/${username}/${elem[0].toLowerCase()}`}
+                  />
                 </MenuItem>
               )
             } else {
@@ -59,7 +61,9 @@ const WorkerMenu = ({ active, device, username, handleChoice }, ref) => {
                     <i className={elem[1]} />
                   </span>
                   <h3>{elem[0]}</h3>
-                  <Link to={`/dashboard/worker/${username}/${elem[0]}`} />
+                  <Link
+                    to={`/dashboard/worker/${username}/${elem[0].toLowerCase()}`}
+                  />
                 </MenuItem>
               )
             }
@@ -70,7 +74,9 @@ const WorkerMenu = ({ active, device, username, handleChoice }, ref) => {
                   <i className={elem[1]} />
                 </span>
                 <h3>{elem[0]}</h3>
-                <Link to={`/dashboard/worker/${username}/${elem[0]}`} />
+                <Link
+                  to={`/dashboard/worker/${username}/${elem[0].toLowerCase()}`}
+                />
               </MenuItem>
             )
           }

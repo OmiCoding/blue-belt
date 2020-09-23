@@ -1,12 +1,14 @@
 import React, { forwardRef, useState } from "react"
 
+import { Link } from "react-router-dom"
+
 import { DashboardMenu } from "../../../styles/dashboard/general/NavigationStyles"
 import {
   ItemWrapper,
   MenuItem,
 } from "../../../styles/dashboard/general/NavigationStyles"
 
-const CompanyMenu = ({ active, device, handleChoice }, ref) => {
+const CompanyMenu = ({ active, device, handleChoice, username }, ref) => {
   const [state, setState] = useState({
     companyMenuArr: [
       ["Settings", "fas fa-cog", 1],
@@ -47,7 +49,9 @@ const CompanyMenu = ({ active, device, handleChoice }, ref) => {
                     <i className={elem[1]} />
                   </span>
                   <h3>{elem[0]}</h3>
-                  <button onClick={() => handleChoice(elem[0])} />
+                  <Link
+                    to={`/dashboard/company/${username}/${elem[0].toLowerCase()}`}
+                  />
                 </MenuItem>
               )
             } else {
@@ -58,6 +62,9 @@ const CompanyMenu = ({ active, device, handleChoice }, ref) => {
                   </span>
                   <h3>{elem[0]}</h3>
                   <button onClick={() => handleChoice(elem[0])} />
+                  <Link
+                    to={`/dashboard/company/${username}/${elem[0].toLowerCase()}`}
+                  />
                 </MenuItem>
               )
             }
@@ -68,7 +75,9 @@ const CompanyMenu = ({ active, device, handleChoice }, ref) => {
                   <i className={elem[1]} />
                 </span>
                 <h3>{elem[0]}</h3>
-                <button onClick={() => handleChoice(elem[0])} />
+                <Link
+                  to={`/dashboard/company/${username}/${elem[0].toLowerCase()}`}
+                />
               </MenuItem>
             )
           }
