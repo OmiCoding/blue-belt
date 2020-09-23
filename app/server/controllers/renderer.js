@@ -23,13 +23,17 @@ export const renderer = (req, res, next) => {
         ? "/home/node/app/build/web/loadable-stats.json"
         : path.resolve("build/web/loadable-stats.json")
 
+    const outputPath =
+      process.env.ENV === "production"
+        ? "/home/node/app/build/web"
+        : path.resolve("build/web")
     // "/build/web/"
     // "/home/omi/blue-belt/app/build/web"
 
     const webExtractor = new ChunkExtractor({
-      statsFile: "/home/node/app/build/web/loadable-stats.json",
+      statsFile: webStats,
       publicPath: "/web/",
-      outputPath: "/home/node/app/build/web",
+      outputPath: outputPath,
     })
 
     const app = (

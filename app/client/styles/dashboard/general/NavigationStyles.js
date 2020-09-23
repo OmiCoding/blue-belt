@@ -196,7 +196,7 @@ export const MenuItem = styled("div")`
   align-self: stretch;
   padding: 1rem 0;
 
-  button {
+  a {
     position: absolute;
     top: 0;
     left: 0;

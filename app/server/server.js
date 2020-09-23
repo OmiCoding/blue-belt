@@ -100,7 +100,12 @@ app.use(passport.session())
 // console.log(staticPath)
 // console.log(path.resolve("/home/node/app/build"))
 
-app.use(express.static("/home/node/app/build"))
+let staticPath =
+  process.env.ENV === "production"
+    ? "/home/node/app/build"
+    : path.resolve("build")
+
+app.use(express.static(staticPath))
 
 app.use(function (req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "*")

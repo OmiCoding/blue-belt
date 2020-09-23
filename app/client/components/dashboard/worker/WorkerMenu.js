@@ -1,12 +1,14 @@
 import React, { forwardRef, useState } from "react"
 
+import { Link } from "react-router-dom"
+
 import {
   DashboardMenu,
   MenuItem,
   ItemWrapper,
 } from "../../../styles/dashboard/general/NavigationStyles"
 
-const WorkerMenu = ({ active, device, handleChoice }, ref) => {
+const WorkerMenu = ({ active, device, username, handleChoice }, ref) => {
   const [state, setState] = useState({
     workMenuArr: [
       ["Settings", "fas fa-cog", 1],
@@ -47,7 +49,7 @@ const WorkerMenu = ({ active, device, handleChoice }, ref) => {
                     <i className={elem[1]} />
                   </span>
                   <h3>{elem[0]}</h3>
-                  <button onClick={() => handleChoice(elem[0])} />
+                  <Link to={`/dashboard/worker/${username}/${elem[0]}`} />
                 </MenuItem>
               )
             } else {
@@ -57,7 +59,7 @@ const WorkerMenu = ({ active, device, handleChoice }, ref) => {
                     <i className={elem[1]} />
                   </span>
                   <h3>{elem[0]}</h3>
-                  <button onClick={() => handleChoice(elem[0])} />
+                  <Link to={`/dashboard/worker/${username}/${elem[0]}`} />
                 </MenuItem>
               )
             }
@@ -68,7 +70,7 @@ const WorkerMenu = ({ active, device, handleChoice }, ref) => {
                   <i className={elem[1]} />
                 </span>
                 <h3>{elem[0]}</h3>
-                <button onClick={() => handleChoice(elem[0])} />
+                <Link to={`/dashboard/worker/${username}/${elem[0]}`} />
               </MenuItem>
             )
           }
