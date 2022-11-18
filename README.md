@@ -1,3 +1,6 @@
+# An old fullstack project where I used a variety of different tools to have a better understanding of SSR
+
+
 Initial setup without SSL:
 
 Make sure you have that the docker-compose.yml has this line:
